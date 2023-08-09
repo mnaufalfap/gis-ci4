@@ -59,10 +59,14 @@
                             Dashboard
                         </a>
                         <!-- Tanpa database -->
-                        <div class="sb-sidenav-menu-heading">Without Database</div>
-                        <a class="nav-link" href="<?= base_url('Home/polyline') ?>">
+                        <div class="sb-sidenav-menu-heading">View Maps</div>
+                        <!-- <a class="nav-link" href="<?= base_url('Home/polyline') ?>">
                             <div class="sb-nav-link-icon"><i class="fas fa-map-marker-alt"></i></div>
                             Maps
+                        </a> -->
+                        <a class="nav-link" href="<?= base_url('Lokasi/mapingLokasi') ?>">
+                            <div class="sb-nav-link-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            Maping Lokasi
                         </a>
 
                         <!-- Dengan database -->
@@ -75,7 +79,7 @@
                         <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
                                 <a class="nav-link" href="<?= base_url('Lokasi/inputLokasi') ?>">Input Lokasi</a>
-                                <a class="nav-link" href="<?= base_url('Lokasi/mapingLokasi') ?>">Maping Lokasi</a>
+                                <!-- <a class="nav-link" href="<?= base_url('Lokasi/mapingLokasi') ?>">Maping Lokasi</a> -->
                                 <a class="nav-link" href="<?= base_url('Lokasi/index') ?>">Data Lokasi</a>
                                 <!-- <a class="nav-link" href="#">Jalur Alternatif</a> -->
                             </nav>
