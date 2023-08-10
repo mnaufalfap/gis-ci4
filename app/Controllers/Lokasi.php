@@ -43,7 +43,7 @@ class Lokasi extends BaseController
     public function mapingLokasi()
     {
         $data = [
-            'judul' => 'Maping Lokasi',
+            'judul' => 'Maping dan Rekomendasi Jalur Alternatif',
             'page'  => 'lokasi/v_maping_lokasi',
             'lokasi' => $this->ModelLokasi->getAllData()
         ];

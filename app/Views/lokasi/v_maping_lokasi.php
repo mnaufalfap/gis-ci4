@@ -17,15 +17,33 @@
     <?php } ?>
 
     //Masih hardcode
-    var latlngs = [
-        [-5.374494, 105.242648],
-        [-5.376689, 105.241355],
-        [-5.375516, 105.240510],
-        [-5.374764, 105.241182],
-        [-5.374513, 105.240885]
-    ];
+    // var latlngs = [
+    //     [-5.374494, 105.242648],
+    //     [-5.376689, 105.241355],
+    //     [-5.375516, 105.240510],
+    //     [-5.374764, 105.241182],
+    //     [-5.374513, 105.240885]
+    // ];
 
-    var polyline = L.polyline(latlngs, {
-        weight: 6
-    }).bindPopup("Jalur alternatif untuk menghindari Jl. Cengkeh 1").addTo(map);
+    // var polyline = L.polyline(latlngs, {
+    //     weight: 6
+    // }).bindPopup("Jalur alternatif untuk menghindari Jl. Cengkeh 1").addTo(map);
+
+    L.Routing.control({
+        waypoints: [
+            L.latLng(-5.374494, 105.242648),
+            L.latLng(-5.375905, 105.241810),
+            L.latLng(-5.374513, 105.240885),
+        ],
+        routeWhileDragging: true
+    }).addTo(map);
+
+    L.Routing.control({
+        waypoints: [
+            L.latLng(-5.362739, 105.285530),
+            L.latLng(-5.362163, 105.284637),
+            L.latLng(-5.362705, 105.283303),
+        ],
+        routeWhileDragging: true
+    }).addTo(map);
 </script>
