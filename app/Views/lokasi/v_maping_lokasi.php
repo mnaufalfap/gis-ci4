@@ -41,7 +41,6 @@
     L.Routing.control({
         waypoints: [
             L.latLng(-5.362739, 105.285530),
-            L.latLng(-5.362163, 105.284637),
             L.latLng(-5.362705, 105.283303),
         ],
         routeWhileDragging: true
